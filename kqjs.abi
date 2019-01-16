@@ -1,0 +1,402 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Thu Jan  3 17:55:36 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "charge",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "IDType",
+                    "type": "string"
+                },
+                {
+                    "name": "IDValue",
+                    "type": "uint64"
+                },
+                {
+                    "name": "BizType",
+                    "type": "string"
+                },
+                {
+                    "name": "OprNumb",
+                    "type": "string"
+                },
+                {
+                    "name": "OprNumb_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "BusiTransID",
+                    "type": "string"
+                },
+                {
+                    "name": "BusiTransID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "PayTransID",
+                    "type": "string"
+                },
+                {
+                    "name": "PayTransID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "ActionDate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "OprTime",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ChargeMoney",
+                    "type": "uint64"
+                },
+                {
+                    "name": "CnlTyp",
+                    "type": "string"
+                },
+                {
+                    "name": "PayedType",
+                    "type": "string"
+                },
+                {
+                    "name": "SettleDate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ActivityNo",
+                    "type": "string"
+                },
+                {
+                    "name": "ProdDiscount",
+                    "type": "uint64"
+                },
+                {
+                    "name": "DiscountRate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "PayOrganID",
+                    "type": "string"
+                },
+                {
+                    "name": "PayOrganID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "CommissionRate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "PayeeOrganID",
+                    "type": "string"
+                },
+                {
+                    "name": "PayeeOrganID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "BizVersion",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "charge_t",
+            "base": "",
+            "fields": [
+                {
+                    "name": "IDType",
+                    "type": "string"
+                },
+                {
+                    "name": "IDValue",
+                    "type": "uint64"
+                },
+                {
+                    "name": "BizType",
+                    "type": "string"
+                },
+                {
+                    "name": "OprNumb",
+                    "type": "string"
+                },
+                {
+                    "name": "OprNumb_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "BusiTransID",
+                    "type": "string"
+                },
+                {
+                    "name": "BusiTransID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "PayTransID",
+                    "type": "string"
+                },
+                {
+                    "name": "PayTransID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "ActionDate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "OprTime",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ChargeMoney",
+                    "type": "uint64"
+                },
+                {
+                    "name": "CnlTyp",
+                    "type": "string"
+                },
+                {
+                    "name": "PayedType",
+                    "type": "string"
+                },
+                {
+                    "name": "SettleDate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ActivityNo",
+                    "type": "string"
+                },
+                {
+                    "name": "ProdDiscount",
+                    "type": "uint64"
+                },
+                {
+                    "name": "DiscountRate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "PayOrganID",
+                    "type": "string"
+                },
+                {
+                    "name": "PayOrganID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "BizVersion",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "CommissionRate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "PayeeOrganID",
+                    "type": "string"
+                },
+                {
+                    "name": "PayeeOrganID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "quantity_in",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity_out",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "rmcharge",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "rmsettledate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "settledate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "settlement_t",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "SettleDate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "PayeeOrganID",
+                    "type": "string"
+                },
+                {
+                    "name": "PayeeOrganID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "quantity_in",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity_out",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "uncharge",
+            "base": "",
+            "fields": [
+                {
+                    "name": "uncharge",
+                    "type": "uncharge_t"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "uncharge_t",
+            "base": "",
+            "fields": [
+                {
+                    "name": "IDValue",
+                    "type": "uint64"
+                },
+                {
+                    "name": "OprNumb",
+                    "type": "string"
+                },
+                {
+                    "name": "OprNumb_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "OprTime",
+                    "type": "uint64"
+                },
+                {
+                    "name": "OriActionDate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "OriTransactionID",
+                    "type": "string"
+                },
+                {
+                    "name": "OriTransactionID_hash",
+                    "type": "HASHID"
+                },
+                {
+                    "name": "RevokeReason",
+                    "type": "string"
+                },
+                {
+                    "name": "SettleDate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "BizVersion",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "types": [
+        {
+            "new_type_name": "HASHID",
+            "type": "uint128"
+        }
+    ],
+    "actions": [
+        {
+            "name": "charge",
+            "type": "charge",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmcharge",
+            "type": "rmcharge",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmsettledate",
+            "type": "rmsettledate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "uncharge",
+            "type": "uncharge",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "charges",
+            "type": "charge_t",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "settlements",
+            "type": "settlement_t",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "uncharges",
+            "type": "uncharge_t",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}

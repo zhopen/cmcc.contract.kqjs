@@ -1,0 +1,49 @@
+cl push action kqjs charge \
+'{ 
+"account": "beijing",
+"IDType": "idtype001",                   
+"IDValue": 13699223217,                      
+"BizType": "biztype-chongzhi",                      
+"OprNumb": "10000000004",                      
+"OprNumb_hash": 10000000004,        
+"BusiTransID": "B11111",
+"BusiTransID_hash": 11111,     
+"PayTransID": "P22222",             
+"PayTransID_hash": 22222,        
+"ActionDate": 1545384321,                   
+"OprTime": 1545384321,                      
+"ChargeMoney": 100000,                  
+"CnlTyp": "province firm",                       
+"PayedType": "yucun",                    
+"SettleDate": 1545380000,                   
+"ActivityNo": "activeity0001",                   
+"ProdDiscount": 0,                 
+"DiscountRate": 9000,                 
+"PayOrganID": "beijing",                   
+"PayOrganID_hash": 1001,    
+"CommissionRate": 1000,          
+"PayeeOrganID": "tianjing",
+"PayeeOrganID_hash": 1003,
+"BizVersion": "v1.0"                   
+}' -p beijing
+
+
+
+cl push action kqjs uncharge \
+'{
+"uncharge":
+{
+"IDValue": 13699223216,               
+"OprNumb": "2000001",                 
+"OprNumb_hash": 2000001,         
+"OprTime": 123456,               
+"OriActionDate": 123456,
+"OriTransactionID": "10000000004",        
+"OriTransactionID_hash": 10000000004,
+"RevokeReason": "no Reasson",            
+"SettleDate": 1545380000,            
+"BizVersion": "v2.0",
+"id":0
+},
+"account":"beijing"
+}' -p beijing

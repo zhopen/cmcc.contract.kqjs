@@ -1,0 +1,3 @@
+echo "syn files..."
+scp -r * root@s0.hpelife.club:/opt/eos/contracts/kqjs
+
